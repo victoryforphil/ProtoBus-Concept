@@ -6,3 +6,12 @@ cc_binary(
         "//lib:pbus-lib"
     ],
 )
+
+cc_binary(
+    name = "packet_debug",
+    srcs = ["packet_debug.cpp"],
+    linkopts = ["-pthread"],
+    deps = [
+        "//lib:pbus-lib"
+    ],
+)

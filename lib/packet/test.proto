@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option cc_enable_arenas = true;
+
+package PBus.PacketTest;
+
+
+message TestProto{
+    optional bool value1 = 1;
+    optional int32 value2 = 2;
+    optional int32 value3 = 3;
+    
+}

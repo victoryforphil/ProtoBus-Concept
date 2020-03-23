@@ -4,6 +4,6 @@
 
 TEST(message_test,content)
 {
-    IPC mIpc;
+  PBus::IPC mIpc;
   EXPECT_EQ(mIpc.CreateHandle(),true);
 }
