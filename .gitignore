@@ -1,0 +1,4 @@
+bazel-bin/*
+bazel-out/*
+bazel-ProtoBus-Concept/*
+bazel-testlogs/*
