@@ -31,3 +31,13 @@ TEST(packet_buffer,content)
 
     EXPECT_EQ(size, p.ByteSize() + 3);
 }
+
+TEST(packet_buffer_empty,content)
+{
+    PBus::Packet packet(2,0);
+    int size=0;
+    unsigned char* buffer = packet.GetBuffer(size);
+
+    EXPECT_EQ(size,  3);
+}
+

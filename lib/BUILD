@@ -4,6 +4,7 @@ cc_library(
     deps = [
         "//lib/ipc:pbus-ipc",
         "//lib/packet:pbus-packet",
+        "//lib/bus:pbus-bus",
         "//lib/logging:pbus-logging"
     ],
 )

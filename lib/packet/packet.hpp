@@ -16,7 +16,7 @@ namespace PBus
 
     public:
         Packet(unsigned char tag,  unsigned char source);
-        
+        ~Packet();
         unsigned char GetTag();
         unsigned char GetSource();
 

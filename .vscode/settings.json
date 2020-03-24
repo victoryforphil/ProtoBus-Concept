@@ -57,7 +57,8 @@
         "numeric": "cpp",
         "random": "cpp",
         "mutex": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "*.inc": "cpp"
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
