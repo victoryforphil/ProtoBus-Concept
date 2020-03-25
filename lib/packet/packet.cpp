@@ -14,8 +14,9 @@ PBus::Packet::~Packet(){
 }
 
 void PBus::Packet::SetProtocolBuffer( google::protobuf::Message* proto){
-    mProto = proto;
     PBus::Logging::Debug("Packet-"+std::to_string((int)GetTag()), "SetProtocolBuffer", "Setting Protocol Buffer");
+    mProto = proto;
+  
 }
 
 unsigned char PBus::Packet::GetTag(){

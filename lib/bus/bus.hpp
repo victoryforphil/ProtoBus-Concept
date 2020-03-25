@@ -11,10 +11,15 @@ namespace PBus
         Packet* mCurrentPacket;
         unsigned char mTag;
         unsigned char mSource;
+        
     public:
         Bus(unsigned char tag, unsigned char source);
         void SubmitProtcolBuffer(google::protobuf::Message* proto);
+       
+
         Packet* GetCurrentPacket();
+        unsigned char GetTag();
+        unsigned char GetSource();
         ~Bus();
     };
     
